@@ -11,17 +11,20 @@ bottomNavLi.forEach(li=>{
             li.classList.remove("selected-li")
         })
         li.classList.add("selected-li")
-        servicesDropDown.classList.remove("dropdown-shown")
-        prodsDropDown.classList.remove("dropdown-shown")
-
+        if(!li.classList.contains("dropdown-li")){
+            servicesDropDown.classList.remove("dropdown-shown")
+            prodsDropDown.classList.remove("dropdown-shown")
+        }
     })
 })
 
 prodsDropDownBtn.addEventListener("click",()=>{
     prodsDropDown.classList.toggle("dropdown-shown")
+    servicesDropDown.classList.remove("dropdown-shown")
 })
 servicesDropDownBtn.addEventListener("click",()=>{
     servicesDropDown.classList.toggle("dropdown-shown")
+    prodsDropDown.classList.remove("dropdown-shown")
 })
 
 
