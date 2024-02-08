@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="inner-header">
+            <a href="index.html" class="logo"><img src="resources/logo.png" alt="HEALTH"></a>
+            <div class="search-box">
+                <input type="search" name="searchbar" id="searchbar" placeholder="Search for products and services">
+                <img src="resources/search.png" alt="">
+            </div>
+            <nav class="header-top-nav">
+                <ul>
+                    <div class="cart-notif" id="cartNotif">0</div>
+                    <li><a href="#" ><img src="resources/profile.png" alt="profile"></a></li>
+                    <li><a href="#" ><img src="resources/contact.png" alt="contact"></a></li>
+                    <li id="cart"><img src="resources/cart.png" alt="cart" ></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="header-bottom-nav">
+            <ul>
+                <li class="selected-li"><a href="#">ACCEUIL</a></li>
+                <li class="dropdown-li" id="prodsDropDownBtn">PRODUITS <img src="resources/dropdown.png" alt=""></li>
+                <li class="dropdown-li" id="servicesDropDownBtn">SERVICES <img src="resources/dropdown.png" alt=""></li>
+                <li><a href="#">QUI SOMMES-NOUS?</a></li>
+                <li><a href="#">EXPERIENCE</a></li>
+                <li><a href="#">INFOS/CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="dropdowns-container">
+            <div class="dropdown prods-dropdown" id="prodsDropdown">
+                <ul>
+                    <li class="top-li"><a href="#">Maintien à domicile</a></li>
+                    <li><a href="#">Handicap Enfant</a></li>
+                    <li><a href="#">Handicap adulte</a></li>
+                    <li><a href="#">Professionnels de santé</a></li>
+                    <li class="bottom-li"><a href="#">Ergonomie au travail</a></li>
+                </ul>
+            </div>
+            <div class="dropdown services-dropdown" id="servicesDropdown">
+                <ul>
+                    <li class="top-li"><a href="#">Réparation et entretien</a></li>
+                    <li><a href="#">Collection de matériel médical</a></li>
+                    <li><a href="#">Dépôt des DASRI</a></li>
+                    <li class="bottom-li"><a href="#">Bien-Etre Académie</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="hero">
+            <div class="slider-container">
+                <button class="slider-btn" id="heroSliderBtnLeft"><</button>
+                <ul class="slider-track" id="heroSliderTrack">
+                    <li class="slide">
+                        <div class="slide-content">
+                            <h1>VOTRE<br>SOLUTION SANTE</h1>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet</p>
+                            <a href="#">Savoir Plus</a>
+                        </div>
+                    </li>
+                    <li class="slide">slide 2</li>
+                    <li class="slide">slide 3</li>
+                    <li class="slide">slide 4</li>
+                </ul>
+                <button class="slider-btn" id="heroSliderBtnRight">></button>
+                <div class="slider-nav" id="heroSliderNav">
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+            </div>
+        </section>
+        <section class="prods">
+            <h2>BEST SELLER ORTHOPEDIE</h2>
+            <div class="inner-prods">
+                <button class="slider-btn btn-inactive" id="prodsSliderBtnLeft"><</button>
+                <div class="slider-container">
+                <a href="#">
+                    <div class="slide-card">
+                        <div class="slide-card-content">
+                            <img src="./resources/0d8d166a85c0abe26b74d238926b2074.jpg" alt="produit">
+                            <p class="price"><span class="big-price">25</span>.63$</p>
+                            <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                            <p class="modeles">Existe en plusieurs modéles</p>
+                        </div>
+                    </div>
+                </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/219ced09082a874da38f97509fea61d8.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/fd95ce5028c7bcfc71516afda86ebb88.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/eed49a8c34509390cd2de46fefa71940.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/74d2417a7877bb78e28a1c547e6cd3ae.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/0d8d166a85c0abe26b74d238926b2074.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/219ced09082a874da38f97509fea61d8.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/fd95ce5028c7bcfc71516afda86ebb88.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/eed49a8c34509390cd2de46fefa71940.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/74d2417a7877bb78e28a1c547e6cd3ae.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/0d8d166a85c0abe26b74d238926b2074.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                        
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/219ced09082a874da38f97509fea61d8.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/fd95ce5028c7bcfc71516afda86ebb88.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="slide-card">
+                            <div class="slide-card-content">
+                                <img src="./resources/0d8d166a85c0abe26b74d238926b2074.jpg" alt="produit">
+                                <p class="price"><span class="big-price">25</span>.63$</p>
+                                <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                <p class="modeles">Existe en plusieurs modéles</p>
+                            </div>
+                        </div>
+                    </a>
+                        
+                        <a href="#">
+                            <div class="slide-card">
+                                <div class="slide-card-content">
+                                    <img src="./resources/219ced09082a874da38f97509fea61d8.jpg" alt="produit">
+                                    <p class="price"><span class="big-price">25</span>.63$</p>
+                                    <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                    <p class="modeles">Existe en plusieurs modéles</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="slide-card">
+                                <div class="slide-card-content">
+                                    <img src="./resources/fd95ce5028c7bcfc71516afda86ebb88.jpg" alt="produit">
+                                    <p class="price"><span class="big-price">25</span>.63$</p>
+                                    <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                    <p class="modeles">Existe en plusieurs modéles</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="slide-card">
+                                <div class="slide-card-content">
+                                    <img src="./resources/eed49a8c34509390cd2de46fefa71940.jpg" alt="produit">
+                                    <p class="price"><span class="big-price">25</span>.63$</p>
+                                    <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                    <p class="modeles">Existe en plusieurs modéles</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#">
+                            <div class="slide-card">
+                                <div class="slide-card-content">
+                                    <img src="./resources/74d2417a7877bb78e28a1c547e6cd3ae.jpg" alt="produit">
+                                    <p class="price"><span class="big-price">25</span>.63$</p>
+                                    <h4 class="prod-name">Nicorette 500 mg Menthe</h4>
+                                    <p class="modeles">Existe en plusieurs modéles</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="detectScrollEnd"></div>
+                </div>
+                <button class="slider-btn" id="prodsSliderBtnRight">></button>
+            </div>
+        </section>
+        <section class="conseils">
+            <h2>NOS CONSEILS SANTE</h2>
+            <div class="inner-conseils">
+                <button class="slider-btn" id="conseilsSliderBtnLeft"><</button>
+                <div class="slider-container">
+                    <ul class="slider-track" id="conseilsSliderTrack">
+                        <li class="slide slide1">
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide slide2">
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide slide3">
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide slide4">
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="slide-card-container">
+                                        <div class="slide-card">
+                                            <div class="slide-card-content">
+                                                <h4>Votr solution sante</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="slider-btn" id="conseilsSliderBtnRight">></button>
+            </div>
+            <div class="slider-nav" id="conseilsSliderNav">
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="inner-contact">
+                <div class="contact-box">
+                    <div class="contact-box-content-container">
+                        <div class="contact-box-content">
+                            <h1>RESTONS EN CONTACT</h1>
+                            <p>Inscrivez-vous à nos communications et bénéficiez de contenus exclusifs, du programme fidélité et d'offrs personnalisées. Pas plus d'un email, par semaine.</p>
+                            <input type="email" name="email" id="emailInput" placeholder="Votre adresse email">
+                            <button class="email-btn" id="emailBtn">JE M'INSCRIS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-img"></div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="inner-partners">
+                <h2>NOS PARTENAIRES</h2>
+                <div class="partner-list">
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                </div>
+                <button class="partners-btn">Voir tous nos marques</button>
+            </div>
+        </section>
+        <section class="text">
+            <div class="inner-text">
+                <div class="text-cols">
+                    <div class="text-col">
+                        <h3>achat de médicaments et de produits de paramédical sur <br>internet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis risus mi. Ut placerat quam lectus. Curabitur dictum velit non lacus ornare tempor. Nullam quis augue in leo aliquet malesuada sit amet eget eros. Sed laoreet posuere velit sit amet varius. Nulla eget purus non erat fringilla sodales vel a nulla. Cras sit amet tempus risus. Fusce dignissim blandit justo, eget elementum risus tristique a. Nunc fringilla lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique enim lorem. Phasellus a auctor lacus. Proin vitae accumsan nunc.</p>
+                        <h3>Votre paramédical  en ligne</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis risus mi. Ut placerat quam lectus. Curabitur dictum velit non lacus ornare tempor. Nullam quis augue in leo aliquet malesuada sit amet eget eros. Sed laoreet posuere velit sit amet varius.</p>
+                    </div>
+                    <div class="img-col"></div>
+                </div>
+                <p>Integer ac interdum lacus. Nunc porta semper lacus a varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc sagittis consectetur velit, ac gravida nunc gravida et. Vestibulum at eros imperdiet, volutpat nunc vitae, ornare erat. Proin interdum aliquet porta. Fusce ut semper ligula.</p>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="inner-advantages">
+                <h3>LES AVANTAGES</h3>
+                <div class="advantages-list">
+                    <div class="advantage">
+                        <img src="resources/livGrat.png" alt="Livraison gratuite">
+                        <h4>Livraison gratuite</h4>
+                        <p>Livraison express gratuite à domicile ou en point relais avec le Pass Livraison</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="resources/retGrat.png" alt="Retour gratuit">
+                        <h4>Retour gratuit</h4>
+                        <p>Retournez et échangez sans frais pendant 30 jours avec le Pass Livraison</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="resources/prodContr.png" alt="Produits controles">
+                        <h4>Produits contrôlés</h4>
+                        <p>Vous passez commande auprès de pharmacies françaises</p>
+                    </div>
+                    <div class="advantage">
+                        <img src="resources/achSec.png" alt="Achats securisés">
+                        <h4>Achats 100% sécurisés</h4>
+                        <p>Le plus haut niveau de sécurité pour vos achats santé en ligne</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-action">
+            <div class="inner-call-action">
+                <div class="call-action-content">
+                    <h1>
+                        POUR PLUS D'INFORMATIONS, CONTACTEZ-NOUS !
+                    </h1>
+                    <a href="#">ACCEDEZ AU FORMULAIRE DE CONTACT</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inner-footer">
+            <div class="top-footer">
+                <div class="table">
+                    <ul class="col address-col">
+                        <li class="title"><h3>MEDICALLIANCE</h3></li>
+                        <li><p>2, rue des Satellites Parc Technologique du Canal 31520 RAMONVILLE SAINT-AGNE</p></li>
+                    </ul>
+                    <ul class="col">
+                        <li class="title"><h3>NOS SERVICES</h3></li>
+                        <li><a href="#">Réparation et entretien</a></li>
+                        <li><a href="#">Collection de matériel médical</a></li>
+                        <li><a href="#">Dépôt des DASRI</a></li>
+                        <li><a href="#">Bien-Etre Académie</a></li>
+                    </ul>
+                    <ul class="col">
+                        <li class="title"><h3>NOS PRODUITS</h3></li>
+                        <li><a href="#">Maintien à domicile</a></li>
+                        <li><a href="#">Handicap Enfant</a></li>
+                        <li><a href="#">Handicap adulte</a></li>
+                        <li><a href="#">Professionnels de santé</a></li>
+                        <li><a href="#">Ergonomie au travail</a></li>
+                    </ul>  
+                    <ul class="col">
+                        <li class="title"><h3>FOLLOW</h3></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>  
+                </div>
+                <ul class="payment">
+                    <li><a href="#"><img src="./resources/visa.png" alt="visa"></a></li>
+                    <li><a href="#"><img src="./resources/masterCard.png" alt="mastercard"></a></li>
+                    <li><a href="#"><img src="./resources/paypal.png" alt="paypal"></a></li>
+                </ul>
+            </div>
+            <div class="bottom-footer">
+                <p class="rights">© Mediclub - 2020. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/sliders.js"></script>
+    <script src="JS/prodsSlider.js"></script>
+    <script src="JS/dropdown.js"></script>
+    <script src="JS/headerBottomNav.js"></script>
+
+
+</body>
+</html>
